@@ -12,7 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rollNoOfAA_ = $_POST['rollNumber'];
     $passwordOfAA_ = $_POST['password'];
 
-    $conn = new mysqli("localhost", "root", "", "nss_dev");
+    // $conn = new mysqli("localhost", "root", "", "nss_dev");
+    $conn = new mysqli("10.198.49.24", "nss", "Xd2DqSSaWV9V7db2", "nss");
+
 
     // check connection
     if ($conn->connect_error) {
